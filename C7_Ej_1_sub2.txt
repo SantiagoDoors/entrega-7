@@ -1,0 +1,23 @@
+Objetos set y get 
+    2. Responda: si o no
+        a. Desde adentro de la clase Rectángulo:
+            i. ¿Puedo acceder directamente al atributo color?
+            ii. Creando algún método ¿necesito usar el método get para acceder al atributo color?
+        b. Desde otra clase del mismo proyecto, estando dentro del método main (ejecutable):
+            i. Si creo un objeto de la clase Rectángulo, 
+                1. ¿Puedo saber su color directamente, sin usar get?
+                2. ¿Necesito usar getColor() para obtener el color?
+                3. ¿Puedo cambiar el color directamente asignando con “=”?
+                4.  ¿Necesito usar el método setColor()?
+
+2_a i) no se puede acceder directamente al atributo color.
+2_a ii) para acceder al color es necesario un metodo que retorne el color.
+							
+			public String getColor(){
+				return color; 
+			}.
+
+2_b	i_1) no puedo acceder al color porque es un atributo privado.
+    	i_2) la unica forma de acceder al metodo privado es usando el metodo getColor().
+	i_3) no se puede cambiar el color usando el operador de asignacion "=" porque es un atributo privado.
+	i_4) si, para modificar el color se usa el metodo setColor().
